@@ -4,3 +4,32 @@
 #header {
   background-color: cadetblue;
 }
+
+#middle-container {
+  background-color: gainsboro;
+}
+
+#lower-container {
+  background-color: lightblue;
+}
+
+body {
+  text-align: center;
+  background-color: darkgrey;
+}
+
+.about {
+  width: 50%;
+  margin: 5% auto 5% auto;
+  text-align: left;
+}
+
+.about-img {
+  float: left;
+  margin-right: 30px;
+}
+
+.value-img {
+  float: right;
+  margin-left: 30px;
+}
