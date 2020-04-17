@@ -19,7 +19,7 @@
 
 #footer {
   background-color: #bae5e5;
-  padding: 3% 3%;
+  padding: 5% 3%;
 }
 
 body {
@@ -64,5 +64,18 @@ body {
 }
 
 .contact-btn {
-  padding: 5%;
+  margin: 10px auto 50px auto;
+}
+.myname {
+  margin: 5% auto 8% auto;
+  line-height: 2;
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: 600;
 }
