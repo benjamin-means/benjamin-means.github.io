@@ -1,27 +1,35 @@
 .navbar {
-  background-color: cadetblue;
+  background-color: #98d6ea;
+  padding: 10px;
+  margin: 0 5% 0 5%;
 }
 #header {
-  background-color: cadetblue;
+  background-color: #98d6ea;
 }
 
 #middle-container {
-  background-color: gainsboro;
+  background-color: #bae5e5;
   padding: 3% 3%;
 }
 
 #lower-container {
-  background-color: lightblue;
+  background-color: #98d6ea;
+  padding: 3% 0%;
+}
+
+#footer {
+  background-color: #bae5e5;
   padding: 3% 3%;
 }
 
 body {
   text-align: center;
   background-color: darkgrey;
+  font-family: "Jura", sans-serif;
 }
 
 .about {
-  width: 50%;
+  width: 60%;
   margin: 5% auto 5% auto;
   text-align: left;
 }
@@ -29,11 +37,13 @@ body {
 .about-img {
   float: left;
   margin-right: 30px;
+  position: relative;
 }
 
 .value-img {
   float: right;
   margin-left: 30px;
+  position: relative;
 }
 
 .blog-img {
@@ -47,4 +57,12 @@ body {
   line-height: 2;
   width: 40%;
   margin: auto;
+}
+
+.footer-icon {
+  margin: 20px;
+}
+
+.contact-btn {
+  padding: 5%;
 }

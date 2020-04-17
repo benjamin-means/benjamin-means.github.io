@@ -8,6 +8,7 @@
     <title>Bean's Blog</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;515;600;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -16,7 +17,7 @@
     <section id="header">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#"><h2>BM</h2></a> <!--Include link to top of page whgen clicking on initials-->
+        <a class="navbar-brand" href="#header"><h1>BM</h1></a> 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,17 +25,17 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a> <!--include like to about section-->
+              <a class="nav-link" href="#about-section">About</a> 
             </li>
             <li class="nav-item">
               <li class="nav-item">
-                <a class="nav-link" href="#">Values</a> <!--include like to about section-->
+                <a class="nav-link" href="#values-section">Values</a> 
               </li>
               <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a> <!--inlcude link to blog carousel-->
+              <a class="nav-link" href="#lower-container">Blog</a> 
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a> <!--include link to contact footer-->
+              <a class="nav-link" href="#footer">Contact</a> 
             </li>
           </ul>
         </div>
@@ -42,18 +43,25 @@
     </div>
   </section>
 
+  
+
     <!-- This middle container is here for the bulk of my webpage -->
     <section id="middle-container">
 
       <div>
-        <div class="about">
+        <h1>Benjamin Means</h1>
+        <h2>This is my blog.</h2>
+      </div>
+
+      <div>
+        <div class="about" id="about-section">
           <img class="about-img" src="http://placekitten.com/200/200" alt="placeholder">
     
           <h3>About</h3>
           <p class="about-text">Vestibulum eu posuere lectus. Pellentesque ultricies leo eget tortor finibus, ac egestas ligula euismod. Nulla dignissim sapien eget laoreet placerat. Duis neque lacus, mollis sit amet rhoncus a, imperdiet ut sem. Ut vitae mollis tellus. Mauris mollis elit in justo euismod, eget consequat risus consectetur. Aliquam condimentum suscipit felis quis ultricies. Curabitur tellus elit, tempor ut accumsan </p>
           
         </div>
-        <div class="about">
+        <div class="about" id="values-section">
           <img class="value-img" src="http://place-puppy.com/200x200" alt="placeholder">
 
           <h3>Values</h3>
@@ -96,22 +104,23 @@
 </section>
 
 <!-- The foot is so people can get in contact with me and access my social accounts -->
-    <div id="footer">Footer
-      <br>
-      <button>Contact Me</button>
-      <br>
-      <a href="#">LinkedIN</a>
-      <br>
-      <a href="#">Facebook</a>
-      <br>
-      <a href="#">Instagram</a>
-      <br>
-      <a href="#">Website</a>
-      <br>
-      <a href="#">Github</a>
-    </div>
+<footer class="white-section" id="footer">
 
+  <a href="mailto:ben.w.means@gmail.com"><button class="contact-btn">Contact Me</button></a>
 
+  <div class ="container-fluid">
+  <a href="https://www.linkedin.com/in/ben-means-8a306992/"><i class=" footer-icon fab fa-linkedin" ></i></a>
+  <a href="https://www.facebook.com/ben.w.means/"><i class=" footer-icon fab fa-facebook-f" href="#"></i></a>
+  <a href="https://www.instagram.com/benmeansfitness/?hl=en"><i class=" footer-icon fab fa-instagram" href="#"></i></a>
+  <a href="https://github.com/benjamin-means"><i class=" footer-icon fab fa-github-square" href="#"></i></a>
+  <p>© Copyright 2020 Ben Means</p>
+</div>
+</footer>
+
+<script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
