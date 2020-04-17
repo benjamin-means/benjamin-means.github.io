@@ -24,13 +24,13 @@
 
 body {
   text-align: center;
-  background-color: darkgrey;
+  background-color: #bae5e5;
   font-family: "Jura", sans-serif;
 }
 
 .about {
   width: 60%;
-  margin: 5% auto 5% auto;
+  margin: 5% auto 12.5% auto;
   text-align: left;
 }
 
