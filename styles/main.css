@@ -79,3 +79,27 @@ h1 {
 h3 {
   font-weight: 600;
 }
+
+@media only screen and (max-width: 600px) {
+  .about-img {
+    float: none;
+    text-align: left;
+  }
+  .value-img {
+    float: none;
+    text-align: left;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-img {
+    float: none;
+    text-align: left;
+  }
+  .value-img {
+    float: none;
+    text-align: left;
+    margin-left: 0;
+  }
+}
