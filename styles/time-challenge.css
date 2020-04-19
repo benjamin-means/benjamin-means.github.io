@@ -1,8 +1,12 @@
+/* ID selectors */
+
 #footer {
   text-align: center;
   margin: 3%;
   padding-bottom: 50px;
 }
+
+/* standard html tag selectors */
 
 body {
   font-family: "Jura", sans-serif;
@@ -36,6 +40,8 @@ hr {
   color: #dbdbdb;
 }
 
+/* class selectors */
+
 .profile-img {
   border-radius: 50%;
   width: 200px;
@@ -46,14 +52,7 @@ hr {
   animation-timing-function: linear;
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* row and col rules for html elements */
 
 .row {
   width: 100%;
@@ -69,11 +68,14 @@ hr {
   margin: auto;
 }
 
-.about {
+/* container for sections */
+.container {
   text-align: center;
   width: 50%;
   margin: 6% auto 6% auto;
 }
+
+/* list row and col rules */
 
 .listrow {
   width: 50%;
@@ -88,6 +90,7 @@ hr {
   margin: auto;
 }
 
+/* table row rules */
 .tablerow {
   width: 100%;
   display: flex;
@@ -95,6 +98,9 @@ hr {
   justify-content: center;
   margin-top: 2%;
 }
+
+/* homepage icon */
+
 .homepage {
   margin: 3%;
   color: #d5c455;
@@ -103,6 +109,8 @@ hr {
 .homepage:hover {
   color: #fddb3a;
 }
+
+/* contact me button */
 
 .BUTTON_BQK {
   -webkit-border-radius: 20px;
@@ -130,6 +138,19 @@ hr {
   text-decoration: none;
 }
 
+/* copyright end line */
+
 .copyright {
   margin: 3%;
+}
+
+/* makes the profile image spin once a minute */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

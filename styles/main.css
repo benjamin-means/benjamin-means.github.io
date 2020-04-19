@@ -1,31 +1,66 @@
+/* HTML tag selectors */
+
+body {
+  background-color: #f6f4e6;
+  font-family: "Jura", sans-serif;
+  color: #222831;
+}
+
+span {
+  text-decoration: underline;
+}
+
+h1 {
+  font-weight: bold;
+  color: #d5c455;
+  text-align: center;
+}
+
+h3 {
+  color: #d5c455;
+}
+
+hr {
+  line-height: 2rem;
+  margin: 5% auto 5% auto;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 10px;
+  width: 6%;
+  color: #dbdbdb;
+}
+
+/* Navbar and header */
+
+#header {
+  background-color: #ede59a;
+}
+
 .navbar {
-  background-color: #98d6ea;
+  background-color: #ede59a;
   padding: 10px;
   margin: 0 5% 0 5%;
 }
-#header {
-  background-color: #98d6ea;
+
+.homepage {
+  color: #d5c455;
+}
+.homepage:hover {
+  color: #fddb3a;
 }
 
+/* about + values */
+
 #middle-container {
-  background-color: #bae5e5;
+  background-color: #f6f4e6;
   padding: 3% 3%;
 }
 
-#lower-container {
-  background-color: #98d6ea;
-  padding: 3% 0%;
-}
-
-#footer {
-  background-color: #bae5e5;
-  padding: 5% 3%;
-}
-
-body {
+.myname {
+  margin: 5% auto 8% auto;
+  line-height: 2;
+  font-weight: bold;
   text-align: center;
-  background-color: #bae5e5;
-  font-family: "Jura", sans-serif;
 }
 
 .about {
@@ -38,12 +73,23 @@ body {
   float: left;
   margin-right: 30px;
   position: relative;
+  width: 200px;
+  height: 200px;
 }
 
 .value-img {
   float: right;
   margin-left: 30px;
   position: relative;
+  border-radius: 50%;
+}
+
+/* blog  */
+
+#lower-container {
+  background-color: #ede59a;
+  padding: 3% 0%;
+  text-align: center;
 }
 
 .blog-img {
@@ -53,32 +99,68 @@ body {
   margin: 2% auto 2% auto;
 }
 
+.blog-img:hover {
+  widows: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 2% auto 2% auto;
+}
+
+.blog-number {
+  text-decoration: underline;
+}
+
 .blog-text {
   line-height: 2;
   width: 40%;
   margin: auto;
 }
 
+/* footer */
+
+#footer {
+  background-color: #f6f4e6;
+  padding: 5% 3%;
+  text-align: center;
+}
+
 .footer-icon {
   margin: 20px;
+  color: #d5c455;
 }
 
-.contact-btn {
-  margin: 10px auto 50px auto;
-}
-.myname {
-  margin: 5% auto 8% auto;
-  line-height: 2;
-  font-weight: bold;
+.footer-icon:hover {
+  color: #fddb3a;
 }
 
-h1 {
-  font-weight: bold;
+.BUTTON_BQK {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #222831;
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px;
+  background-color: #ede59a;
+  border: solid #222831 3px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin: 30px;
 }
 
-h3 {
-  font-weight: 600;
+.BUTTON_BQK:hover {
+  background: #fddb3a;
+  border: solid #222831 3px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-decoration: none;
 }
+
+/* media queries */
 
 @media only screen and (max-width: 600px) {
   .about-img {
