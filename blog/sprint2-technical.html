@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprint 2 Blog</title>
+    <link rel="shortcut icon" type="image/png" href="../favicon copy.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;515;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rosario:700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" type="text/css" />
+  </head>
+  <body class="blog-padding">
+    <!-- Link to homepage -->
+
+    <a class="homepage" href="https://benjamin-means.github.io/index.html"
+      ><i class="fas fa-home fa-3x"></i
+    ></a>
+
+    <h1>The CSS Box Model</h1>
+
+    <p>
+      All HTML elements can be considered as boxes. In CSS, the term "box model"
+      is used when talking about design and layout.
+    </p>
+
+    <p>
+      The CSS box model is essentially a box that wraps around every HTML
+      element. It consists of: margins, borders, padding, and the actual
+      content. The image below illustrates the box model:
+    </p>
+
+    <img class="blog2-img" src="blogimages/Boxmodel-img.png" alt="Box Model" />
+
+    <h3>Explanation of the different parts:</h3>
+
+    <ul>
+      <li>Content - The content of the box, where text and images appear</li>
+      <li>
+        Padding - Clears an area between the content and the inside of the
+        border. The padding is transparent.
+      </li>
+      <li>Border - A border that goes around the padding and content.</li>
+      <li>
+        Margin - Clears an area outside the border. The margin dictates the
+        space between the box and its surrounding elements. The margin is
+        transparent.
+      </li>
+    </ul>
+
+    <hr />
+
+    <p>
+      The box model allows us to add a border around elements, and to define
+      space between elements. Here is some HTML and CSS of a an element that we
+      have given a border to, and then set the padding and margin properties.
+    </p>
+
+    <img
+      class="blog2-img"
+      src="blogimages/boxmodel-img-code.png"
+      alt="Code for box model"
+    />
+
+    <p>Here is what it would look like on your web page</p>
+
+    <img
+      class="blog2-img"
+      src="blogimages/boxmodel-img-demo.png"
+      alt="Img of divs"
+    />
+
+    <hr />
+
+    <h3>Borders</h3>
+
+    <p>
+      Borders can be useful if you want viewers of your webpage to see the
+      different elements on your webpage. This creates a much more distinct look
+      and gets rid of any ambiguity. There are bunch of different ways you can
+      style borders.
+    </p>
+
+    <p>
+      The border-style property specifies what kind of border to display.
+    </p>
+
+    <ul>
+      <li>dotted - Defines a dotted border</li>
+      <li>dashed - Defines a dashed border</li>
+      <li>solid - Defines a solid border</li>
+      <li>double - Defines a double border</li>
+      <li>
+        groove - Defines a 3D grooved border. The effect depends on the
+        border-color value
+      </li>
+      <li>
+        ridge - Defines a 3D ridged border. The effect depends on the
+        border-color value
+      </li>
+      <li>
+        inset - Defines a 3D inset border. The effect depends on the
+        border-color value
+      </li>
+      <li>
+        outset - Defines a 3D outset border. The effect depends on the
+        border-color value
+      </li>
+      <li>none - Defines no border</li>
+      <li>hidden - Defines a hidden border</li>
+    </ul>
+
+    <p>
+      The border-style property can have from one to four values (for the top
+      border, right border, bottom border, and the left.
+    </p>
+
+    <p>
+      Here is what the code looks like for the different border-style properties
+    </p>
+
+    <img
+      class="blog2-img"
+      src="blogimages/border-code.png"
+      alt="Image of border code"
+    />
+
+    <p>Here is what they look like on your webpage</p>
+
+    <img
+      class="blog2-img"
+      src="blogimages/border-demo.png"
+      alt="Image of border demo"
+    />
+
+    <hr />
+
+    <h3>Margin</h3>
+
+    <p>
+      When styling your website it can look a bit strange having all the
+      elements squished up against one another. You may want to make use of
+      ‘margin’ to space out your elements on the page. CSS has properties for
+      specifying the margin for each side of an element:
+    </p>
+
+    <ul>
+      <li>marign-top</li>
+      <li>margin-right</li>
+      <li>margin-bottom</li>
+      <li>margin-left</li>
+    </ul>
+
+    <p>
+      All the margin properties can have the following values:
+    </p>
+
+    <ul>
+      <li>auto - the browser calculates the margin</li>
+      <li>length - specifies a margin in px, pt, cm, etc.</li>
+      <li>
+        % - specifies a margin in % of the width of the containing element
+      </li>
+      <li>
+        inherit - specifies that the margin should be inherited from the parent
+        element
+      </li>
+    </ul>
+
+    <hr />
+
+    <h3>Padding</h3>
+
+    <p>
+      Padding can be set on any CSS element to help create space between the
+      content and the border. It’s another way to space out elements on your
+      page and can be particularly useful when you have hidden borders but want
+      space around one elements content, and another element.
+    </p>
+
+    <p>
+      CSS has properties for specifying the padding for each side of an element:
+    </p>
+
+    <ul>
+      <li>padding-top</li>
+      <li>padding-right</li>
+      <li>padding-bottom</li>
+      <li>padding-left</li>
+    </ul>
+
+    <p>
+      All the padding properties can have the following values:
+    </p>
+
+    <ul>
+      <li>length - specifies a padding in px, pt, cm, etc.</li>
+      <li>
+        % - specifies a padding in % of the width of the containing element
+      </li>
+      <li>
+        inherit - specifies that the padding should be inherited from the parent
+        element
+      </li>
+    </ul>
+
+    <p>
+      To shorten the code, it is possible to specify all the padding properties
+      in one property. The padding property is a shorthand property for the
+      following individual padding properties:
+    </p>
+
+    <ul>
+      <li>padding-top</li>
+      <li>padding-right</li>
+      <li>padding-bottom</li>
+      <li>padding-left</li>
+    </ul>
+
+    <p>
+      So, here is how it works: If the padding property has four values:
+    </p>
+
+    <ul>
+      <li>padding: 25px 50px 75px 100px;</li>
+      <ul>
+        <li>top padding is 25px</li>
+        <li>right padding is 50px</li>
+        <li>bottom padding is 75px</li>
+        <li>left padding is 100px</li>
+      </ul>
+    </ul>
+
+    <hr />
+
+    <p>
+      Headover to <a href="https://www.codeply.com/p">codeply.com</a> and try
+      playing around with these properties yourself!
+    </p>
+
+    <p>
+      All information and images sourced from
+      <a href="https://www.w3schools.com/css/css_boxmodel.asp"
+        >W3 schools.com</a
+      >
+    </p>
+
+    <!-- scripts for font awesome icons -->
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+  </body>
+</html>
