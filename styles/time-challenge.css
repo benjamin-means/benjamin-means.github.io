@@ -3,7 +3,7 @@
 #footer {
   text-align: center;
   margin: 3%;
-  padding-bottom: 50px;
+  padding-bottom: 5%;
 }
 
 /* standard html tag selectors */
@@ -127,6 +127,7 @@ hr {
   display: inline-block;
   cursor: pointer;
   text-align: center;
+  margin-bottom: 2%;
 }
 
 .BUTTON_BQK:hover {
@@ -142,6 +143,15 @@ hr {
 
 .copyright {
   margin: 3%;
+}
+
+.footer-icon {
+  margin: 20px;
+  color: #d5c455;
+}
+
+.footer-icon:hover {
+  color: #fddb3a;
 }
 
 /* makes the profile image spin once a minute */
