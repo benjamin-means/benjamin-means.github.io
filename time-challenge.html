@@ -16,7 +16,7 @@
     <!-- Header -->
     <div class="row">
       <div class="col">
-        <img title="Look what I've done with my time!"
+        <img id="profile" title="Look what I've done with my time!"
           class="profile-img"
           src="Ben Profile dev.png"
           alt="Profile-img"
@@ -109,6 +109,7 @@
   </div>
 </div>
 
+<!-- <div style = "background-color: red; margin-left: -5px; margin-top: -5px; height:10px; width:10px; position:absolute; top:164px; left:224px"></div> -->
 
     </table>
 <hr>
@@ -125,6 +126,42 @@
     defer
     src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
   ></script>
+
+  <script>
+// var profileImg = document.getElementById('profile')
+
+function makeProfileSpin(){
+
+var profileImg = document.getElementById('profile')
+// var coord = profileImg.getBoundingClientRect();
+
+document.onmousemove = function(evt){
+  // if (profileImg.style.display === 'none') {
+  // profileImg.style.display = 'inline-block'
+  // } else {
+  // profileImg.style.display = 'none';
+  // }
+  // console.log(evt.clientX, evt.clientY)
+  // console.log(coord);
+  // console.log(profileImg)}
+  var mouseX = evt.clientX
+  var mouseY = evt.clientY
+  var imgX = profileImg.getBoundingClientRect().x + (profileImg.getBoundingClientRect().width / 2)
+  var imgY = profileImg.getBoundingClientRect().y + (profileImg.getBoundingClientRect().height / 2)
+  // console.log(mouseX, mouseY, imgX, imgY)
+  var answer = (Math.pow((mouseX - imgX),2)) + (Math.pow((mouseY - imgY),2))
+  answer = Math.sqrt(answer)
+  // console.log(answer)
+
+  // profileImg.style.animation = "spin 1s linear 0s infinite"
+  profileImg.style.animationDuration = answer/100 + 's'
+
+}
+};
+
+makeProfileSpin();
+
+  </script>
 
   </body>
 </html>
