@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sprint3-Technical</title>
+    <link rel="stylesheet" href="../styles/main.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;515;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rosario:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="blog-padding">
+    <a class="homepage" href="http://benjamin-means.github.io/index.html"
+      ><i class="fas fa-home fa-3x"></i
+    ></a>
+
+    <h3>HTML and CSS.</h3>
+
+    <p>
+      When thinking about the differences between HTML and CSS I find it most
+      useful to think about them in terms of what their roles would be if
+      building a house.
+    </p>
+    <p>
+      The first person you’re going to get to help build your house is HTML.
+      Their job is to come along and lay-down the foundations of the house. They
+      put up the wooden framing, section out different rooms, attach doors,
+      insulate the place, add a roof, and so on.
+    </p>
+    <p>
+      Now you could save a lot on your house budget and leave it as is, but then
+      it wouldn’t be such a nice place to live.So you decide to get another
+      person to help design the house and give it more of that homely feel. You
+      hire CSS.
+    </p>
+    <p>
+      In they come with their designers eye and start adding wallpaper that
+      match the rugs they’ve put down. They give the house a paint job, maybe
+      kit out your bedroom with your favourite paintings that have been in
+      storage for years. It’s their job to make sure that your house looks and
+      feels homely, and so that visitors talk about their experience for years
+      to come.
+    </p>
+
+    <h3>Control flow and loops.</h3>
+
+    <p>
+      Control flow in computer science is the order in which code is run. It can
+      be changed with conditionals which interrupt the normal order of execution
+      when certain conditions are met, such as a loop.
+    </p>
+    <p>
+      A loop is a sequence of instructions that is continually repeated until a
+      certain condition is met in computer programming.
+    </p>
+    <p>
+      An example would be driving your car. The loop would first need to check
+      that there is petrol in the car. It would stop running when the petrol
+      became empty. With each iteration through the loop, as it checked there
+      was still petrol in the car then it would burn some more petrol.
+    </p>
+    <p>
+      The first statement (checking petrol is in the car), is only checked once
+      right at the start.
+    </p>
+    <p>
+      The second statement (petrol is still above 0), defines the condition
+      needed to execute the third statement.
+    </p>
+    <p>
+      The third statement (burning some petrol), is run every time when the
+      condition of statement two is met.
+    </p>
+    <p>
+      This process is looped through continually until the car runs out of
+      petrol.
+    </p>
+    <p>
+      You could also nest an if…else statement within your loop if you chose
+      too. That would check if you petrol light was on and then decide what to
+      do.
+    </p>
+    <p>
+      So for each iteration through the loop it could check; if the petrol light
+      was off, keep burning fuel and loop again. If the petrol light is on, time
+      to get more petrol.
+    </p>
+
+    <h3>The DOM and how you might interact with it.</h3>
+
+    <p>
+      The DOM is a browser provided JavaScript object that allows us to view and
+      manipulate HTML and CSS elements. It is an object that has a plethora of
+      properties and methods built in to help us do this.
+    </p>
+    <p>Just like a family tree only with one parent, and LOTS of children.</p>
+    <p>
+      Let’s say you wanted to select a bunch of elements on a page (lets go with
+      all paragraphs) and apply all the same style to them. You could do this by
+      creating a function through the DOM.
+    </p>
+    <p>
+      First you would select the elements on the page with
+      ‘document.getElementsByTagName(‘p’);’ and save that as a variable.
+    </p>
+    <p>
+      You could then loop through all the paragraph elements and apply the
+      colour green to them with a for loop.
+    </p>
+    <p>
+      Then you could call your function and BOOM, now all the paragraphs on the
+      page have a green style applied to them.
+    </p>
+    <p>It could look like this;</p>
+    <p>
+      function makeGreen() { 
+         <p> var element = document.getElementsByTagName('p');</p>
+      <p> for (var i = 0; i < element.length; i++) {</p>
+      <p> element[i].style.backgroundColor = 'green'; }</p> 
+    <p> } ; </p>
+    <p> makeGreen();</p>
+    </p>
+    <p>
+      Just for fun, say you wanted to add some nifty function to your webpage.
+      For example, you wanted to make an image spin faster as the mouse got
+      closer to it, and slower as it got further away. The best place to do this
+      would be through the DOM.
+    </p>
+    <p>
+      Through the DOM you could select the elements you wanted to target, in
+      this example the img element and the mouse.
+    </p>
+    <p>
+      With the DOM you could also say when you wanted to kick off the spinning
+      by setting the event. In this case the event would be as the mouse moves.
+    </p>
+    <p>
+      After the event kicks off, you want the img and the mouse to know how far
+      apart they are, and then depending on that result, set the spin speed of
+      the img.
+    </p>
+    <p>
+      (if anyone know how to make this happen and have it not look like a DJ
+      turntable please hit me up!).
+    </p>
+
+    <h3>Accessing data from arrays and objects.</h3>
+
+    <p>
+      The main difference between arrays and objects is that objects don’t track
+      order, whereas arrays do.
+    </p>
+    <p>
+      What this means is that when it comes to accessing data from an array it’s
+      generally a bit easier if you happen to know the index of the element
+      you’re looking for. You would use bracket notation to help you find the
+      element.
+    </p>
+    <p>
+      Otherwise you would have to iterate over the array to search for the
+      element.
+    </p>
+    <p>Example</p>
+    <p>Const names = [‘Ben’, ‘Michael’, ‘Lucy’, ‘Dries’];</p>
+    <p>
+      To access Michael, if you knew the index you would use bracket notation.
+    </p>
+    <p>Const secondName = names[1];</p>
+    <p>
+      If you didn’t know you would have to iterate through and search for
+      Michael.
+    </p>
+    <p>Const Michael = names.find( names => name === ‘Michael’);</p>
+    <p>
+      With objects accessing data can be easier, as there is no concept of
+      order.
+    </p>
+    <p>Const thing = {height: ‘large’, human:’false’, scary:’true’};</p>
+    <p>To know if thing is scary you would use dot notation.</p>
+    <p>Const thingScary = thing.scary</p>
+    <p>
+      Quite often you may find arrays within objects or, an array of objects. In
+      which case you may have to use a combination iterating through the array,
+      as well as dot and bracket notation to access the element you’re looking
+      for.
+    </p>
+
+    <h3>Functions; what they are and why they are useful.</h3>
+
+    <p>A function is a block of code designed to perform a particular task.</p>
+    <p>
+      Functions are useful as they save us from having to continually re-type
+      out the same code whenever we want to perform that task. Instead we can
+      save the code as a function and call it whenever we want to perform that
+      task.
+    </p>
+    <p>By calling a function we are invoking all of the code within it.</p>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+  </body>
+</html>
